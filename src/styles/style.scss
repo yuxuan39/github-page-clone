@@ -1,6 +1,5 @@
 @import 'general';
-
-.direction-row{
+.direction-row {
     display: flex;
     flex-direction: row;
 }
@@ -15,9 +14,9 @@ header {
 }
 
 body {
-    background-color: $primary-font-color;
+    background-color: $primary-background-color;
     font-family: $base-font-family;
-    margin: 0;
+    margin: 0 auto;
 }
 
 nav {
@@ -27,7 +26,6 @@ nav {
     height: 36px;
     margin: 0 134px 0 134px;
     padding: 16px;
-    
 }
 
 .list {
@@ -39,6 +37,10 @@ nav {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 .search-bar {
     background-color: #404448;
     width: 183.948px;
@@ -48,12 +50,10 @@ nav {
     border-radius: 3px;
     font-size: 13px;
     padding: 0 5px 0 5px;
-    
     &::placeholder {
         color: #8d8f91;
     }
-
-    &:focus{
+    &:focus {
         background-color: #4b4f53;
         outline: none;
     }
@@ -78,8 +78,75 @@ a {
 .main {
     background-image: url(https://assets-cdn.github.com/images/modules/site/heroes/simple-codelines.svg);
     background-color: $main-block-color;
+    height: 474px;
+    padding: 120px 0 120px 0;
 }
 
-ul {
-    list-style: none;
+.main {
+    width: 1280px;
+    height: 474px;
+}
+
+.slogan {
+    width: 551.656px;
+    height: 144px;
+    font-size: 72px;
+    font-family: $slogan-font-family;
+    font-weight: 300;
+    color: $primary-font-color;
+    margin: 0;
+}
+
+.text {
+    width: 551.656px;
+    height: 195px;
+    font-size: 26px;
+    font-weight: 300;
+    color: $text-color;
+}
+
+.login-box {
+    width: 380.328px;
+    height: 474px;
+    background-color: $primary-background-color;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    color: $low-key-color;
+    width: 300.328px;
+    height: 426px;
+    padding: 24px 40px 24px 40px;
+
+    p {
+        font-size: 12px;
+    }
+
+    .sign-up-button {
+        background-color: #28a745;
+        color: $primary-font-color;
+        font-size: 16px;
+        padding: 12px 20px 12px 20px;
+    }
+}
+
+.form {
+
+    dd {
+        font-size:14px;
+
+        margin: 0;
+        input {
+
+            width: 278.328px;
+            height: 24px;
+            padding: 10px;
+            border-radius: 5px;
+            border: solid;
+            border-width: 1px;
+            color: $border-color;
+            font-size: 16px;
+        }
+    }
 }
