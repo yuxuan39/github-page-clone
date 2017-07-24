@@ -7,6 +7,8 @@
 svg {
     fill: white;
     background-color: black;
+    border-radius: 50%;
+    background-size: cover;
 }
 
 header {
@@ -76,33 +78,49 @@ a {
 }
 
 .main {
-    background-image: url(https://assets-cdn.github.com/images/modules/site/heroes/simple-codelines.svg);
-    background-color: $main-block-color;
+    width: 1280px;
     height: 474px;
+    background-image: url(https://assets-cdn.github.com/images/modules/site/heroes/simple-codelines.svg);
+    background-size: cover;
+    background-color: $main-block-color;
+    background-position: center 10%;
+    height: 474px;
+    justify-content: center;
     padding: 120px 0 120px 0;
 }
 
-.main {
-    width: 1280px;
-    height: 474px;
-}
+.article {
+    margin: 40px 20px 0 20px;
+    .slogan {
+        width: 551.656px;
+        font-size: 72px;
+        font-family: $slogan-font-family;
+        font-weight: 300;
+        line-height: 72px;
+        color: $primary-font-color;
+        margin: 0 0 16px 0;
+    }
+    .text {
+        width: 551.656px;
+        height: 195px;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 39px;
+        font-family: $slogan-font-family;
+        color: $text-color;
+        margin: 0 auto;
 
-.slogan {
-    width: 551.656px;
-    height: 144px;
-    font-size: 72px;
-    font-family: $slogan-font-family;
-    font-weight: 300;
-    color: $primary-font-color;
-    margin: 0;
-}
+        a { border-bottom: 1px solid;
+            text-decoration: none;
+            border-color: rgba(255, 255, 255, 0.125);
+            color: $primary-font-color;
 
-.text {
-    width: 551.656px;
-    height: 195px;
-    font-size: 26px;
-    font-weight: 300;
-    color: $text-color;
+            &:hover {
+                border-bottom-color: $primary-font-color;
+                outline: none;
+            }
+        }
+    }
 }
 
 .login-box {
@@ -111,6 +129,8 @@ a {
     background-color: $primary-background-color;
     display: flex;
     justify-content: center;
+    margin: 0 20px 0 20px;
+    border-radius: 3px;
 }
 
 .login {
@@ -118,35 +138,98 @@ a {
     width: 300.328px;
     height: 426px;
     padding: 24px 40px 24px 40px;
-
     p {
         font-size: 12px;
+        text-align: center;
+        a {
+            color: #0366d6;
+            text-align: center;
+            &:hover {
+                text-decoration: underline;
+                outline: none;
+            }
+        }
+        .text-left {
+            text-align: left;
+        }
     }
-
     .sign-up-button {
         background-color: #28a745;
+        background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
+        border-radius: 6px;
+        border-width: 1px;
         color: $primary-font-color;
         font-size: 16px;
         padding: 12px 20px 12px 20px;
+        width: 100%;
     }
 }
 
 .form {
-
     dd {
-        font-size:14px;
-
-        margin: 0;
+        font-size: 14px;
+        margin: auto;
+        .blank-input {
+            background-color: $primary-background-color;
+        }
+        label {
+            display: block;
+            margin: 0 0 5px 0;
+        }
         input {
-
             width: 278.328px;
             height: 24px;
             padding: 10px;
+            margin: 0 0 5px 0;
             border-radius: 5px;
-            border: solid;
-            border-width: 1px;
-            color: $border-color;
+            border: solid 1px #d1d5da;
+            color: black;
             font-size: 16px;
+            background-color: #faffbd;
+            &:focus {
+                border-color: #006fff;
+                outline: none;
+            }
+            &::placeholder {
+                color: #8d8f91;
+            }
         }
     }
+}
+.banner-box{
+    background-color: $nav-color;
+    display: flex;
+    justify-content: center;
+
+.banner {
+    max-width: 590px;
+    padding: 32px 16px 32px 16px;
+    
+    
+    .universe-icon {
+        width: 205px;
+        height: 112px;
+        margin: 0 40px 0 0;
+    }
+
+    .universe-wordmark {
+        width: 215px;
+    }
+
+    .universe-text{
+        font-size: 16px;
+        line-height: 1.5;
+        color: $primary-font-color;
+        margin: 8px 0 4px 0;
+    }
+
+    a {
+        color: $text-color;
+
+        &:hover {
+            border-bottom: 1px solid;
+            border-color: $text-color;
+        }
+    }
+}
 }
