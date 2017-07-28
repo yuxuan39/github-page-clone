@@ -4,6 +4,11 @@
     flex-direction: row;
 }
 
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
 svg {
     fill: white;
     background-color: black;
@@ -15,9 +20,14 @@ header {
     background-color: $nav-color;
 }
 
-body {
+html {
     background-color: $primary-background-color;
     font-family: $base-font-family;
+    font-size: $base-rem;
+    margin: 0 auto;
+}
+
+body {
     margin: 0 auto;
 }
 
@@ -25,7 +35,6 @@ nav {
     background-color: $nav-color;
     color: $primary-font-color;
     align-items: center;
-    height: 36px;
     margin: 0 134px 0 134px;
     padding: 16px;
 }
@@ -34,7 +43,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 439.13px;
-    height: 36px;
     padding: 0 120px 0 21px;
     margin: 0;
 }
@@ -50,7 +58,7 @@ ul {
     border: 0;
     padding: 0;
     border-radius: 3px;
-    font-size: 13px;
+    font-size: (13 / 16) * 1rem;
     padding: 0 5px 0 5px;
     &::placeholder {
         color: #8d8f91;
@@ -64,12 +72,14 @@ ul {
 .sign {
     align-items: center;
     padding: 0 0 0 20px;
-    font-weight: bold;
+    line-height: 20px;
+    font-weight: 600;
 }
 
 .or {
     color: $low-key-color;
     font-weight: normal;
+    margin: 0 auto;
 }
 
 a {
@@ -78,22 +88,19 @@ a {
 }
 
 .main {
-    width: 1280px;
-    height: 474px;
+    width: 100%;
     background-image: url(https://assets-cdn.github.com/images/modules/site/heroes/simple-codelines.svg);
     background-size: cover;
     background-color: $main-block-color;
     background-position: center 10%;
-    height: 474px;
-    justify-content: center;
     padding: 120px 0 120px 0;
 }
 
 .article {
     margin: 40px 20px 0 20px;
+    width: 551.545px;
     .slogan {
-        width: 551.656px;
-        font-size: 72px;
+        font-size: (72 / 16) * 1rem;
         font-family: $slogan-font-family;
         font-weight: 300;
         line-height: 72px;
@@ -101,20 +108,17 @@ a {
         margin: 0 0 16px 0;
     }
     .text {
-        width: 551.656px;
-        height: 195px;
-        font-size: 26px;
+        font-size: (26 / 16) * 1rem;
         font-weight: 300;
         line-height: 39px;
         font-family: $slogan-font-family;
         color: $text-color;
         margin: 0 auto;
-
-        a { border-bottom: 1px solid;
+        a {
+            border-bottom: 1px solid;
             text-decoration: none;
             border-color: rgba(255, 255, 255, 0.125);
             color: $primary-font-color;
-
             &:hover {
                 border-bottom-color: $primary-font-color;
                 outline: none;
@@ -125,21 +129,16 @@ a {
 
 .login-box {
     width: 380.328px;
-    height: 474px;
+    height: 408px;
     background-color: $primary-background-color;
-    display: flex;
-    justify-content: center;
-    margin: 0 20px 0 20px;
     border-radius: 3px;
+    padding: 24px 24px 32px 24px;
 }
 
 .login {
     color: $low-key-color;
-    width: 300.328px;
-    height: 426px;
-    padding: 24px 40px 24px 40px;
     p {
-        font-size: 12px;
+        font-size: (12 / 16) * 1rem;
         text-align: center;
         a {
             color: #0366d6;
@@ -158,8 +157,8 @@ a {
         background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
         border-radius: 6px;
         border-width: 1px;
+        font-size: $base-rem;
         color: $primary-font-color;
-        font-size: 16px;
         padding: 12px 20px 12px 20px;
         width: 100%;
     }
@@ -167,8 +166,8 @@ a {
 
 .form {
     dd {
-        font-size: 14px;
-        margin: auto;
+        font-size: (14 / 16) * 1rem;
+        margin: 0 auto;
         .blank-input {
             background-color: $primary-background-color;
         }
@@ -177,14 +176,14 @@ a {
             margin: 0 0 5px 0;
         }
         input {
-            width: 278.328px;
+            font-size: $base-rem;
+            width: 358.328px;
             height: 24px;
             padding: 10px;
             margin: 0 0 5px 0;
             border-radius: 5px;
             border: solid 1px #d1d5da;
             color: black;
-            font-size: 16px;
             background-color: #faffbd;
             &:focus {
                 border-color: #006fff;
@@ -196,40 +195,103 @@ a {
         }
     }
 }
-.banner-box{
+
+.banner-box {
     background-color: $nav-color;
-    display: flex;
-    justify-content: center;
-
-.banner {
-    max-width: 590px;
-    padding: 32px 16px 32px 16px;
-    
-    
-    .universe-icon {
-        width: 205px;
-        height: 112px;
-        margin: 0 40px 0 0;
-    }
-
-    .universe-wordmark {
-        width: 215px;
-    }
-
-    .universe-text{
-        font-size: 16px;
-        line-height: 1.5;
-        color: $primary-font-color;
-        margin: 8px 0 4px 0;
-    }
-
-    a {
-        color: $text-color;
-
-        &:hover {
-            border-bottom: 1px solid;
-            border-color: $text-color;
+    .banner {
+        max-width: 100%;
+        padding: 32px 16px 32px 16px;
+        .universe-icon {
+            width: 205px;
+            height: 112px;
+            margin: 0 40px 0 0;
+        }
+        .universe-wordmark {
+            width: 215px;
+        }
+        .universe-text {
+            line-height: 1.5;
+            color: $primary-font-color;
+            margin: 8px 0 4px 0;
+        }
+        a {
+            color: $text-color;
+            &:hover {
+                border-bottom: 1px solid;
+                border-color: $text-color;
+            }
         }
     }
 }
+
+.featuretee {
+    padding: 80px 0 80px 0;
+    .all-center {
+        width: 985px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: $base-font-family;
+        padding: 0 16px 0 16px;
+        margin: 0 134px 0 134px;
+        h6 {
+            font-size: $base-rem;
+            font-weight: 300;
+            color: $low-key-color;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: (54 / 16) * 1rem;
+            font-weight: 300;
+            color: $nav-color;
+            font-family: $slogan-font-family;
+            line-height: 1.25;
+            margin: 16px 0 8px 0;
+        }
+        p {
+            font-size: (20 /16) * 1rem;
+            font-weight: 300;
+            line-height: 30px;
+            color: $low-key-color;
+            margin: 0 0 30px 0;
+        }
+        .featuretee-button {
+            button {
+                font-size: $base-rem;
+                font-weight: 600;
+                border: solid 1px #d1d5da;
+                border-radius: 6px;
+                background-color: $primary-background-color;
+                color: #0366d6;
+                padding: 12px 20px 12px 20px;
+                &:hover {
+                    background-color: #0366d6;
+                    border-color: #0366d6;
+                    color: $primary-background-color;
+                }
+            }
+        }
+    }
+    .half-img-and-text {
+        display: flex;
+        justify-content: center;
+        .half-text-container {
+            width: 458px;
+            height: 153px;
+            h3 {
+                font-family: $slogan-font-family;
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0 0 4px 0;
+            }
+            p {
+                line-height: 24px;
+                margin: 0 0 10px 0;
+            }
+        }
+        img {
+            width: 360px;
+            height: 314.422px;
+        }
+    }
 }
