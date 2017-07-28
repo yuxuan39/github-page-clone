@@ -226,6 +226,7 @@ a {
 
 .featuretee {
     padding: 80px 0 80px 0;
+
     .all-center {
         width: 985px;
         display: flex;
@@ -272,12 +273,19 @@ a {
             }
         }
     }
+
     .half-img-and-text {
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding: 80px 0 80px 0;
+        margin: 32px 0 32px 0;
         .half-text-container {
             width: 458px;
             height: 153px;
+            line-height: 1.5;
+            padding: 0 32px 0 0;
+
             h3 {
                 font-family: $slogan-font-family;
                 font-size: 22px;
@@ -288,10 +296,19 @@ a {
                 line-height: 24px;
                 margin: 0 0 10px 0;
             }
+            a {
+                color: #0366d6;
+                &:hover {
+                border-bottom: 1px solid;
+                border-color: #0366d6;
+            }
+            }
         }
         img {
             width: 360px;
             height: 314.422px;
+            padding: 32px;
+            margin: 0 33px 0 33px;
         }
     }
 }
