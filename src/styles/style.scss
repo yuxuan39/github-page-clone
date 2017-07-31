@@ -1,4 +1,4 @@
-@import 'general';
+    @import 'general';
 .direction-row {
     display: flex;
     flex-direction: row;
@@ -7,13 +7,6 @@
 .justify-center {
     display: flex;
     justify-content: center;
-}
-
-svg {
-    fill: white;
-    background-color: black;
-    border-radius: 50%;
-    background-size: cover;
 }
 
 header {
@@ -37,6 +30,12 @@ nav {
     align-items: center;
     margin: 0 134px 0 134px;
     padding: 16px;
+    svg {
+        fill: white;
+        background-color: black;
+        border-radius: 50%;
+        background-size: cover;
+    }
 }
 
 .list {
@@ -226,7 +225,6 @@ a {
 
 .featuretee {
     padding: 80px 0 80px 0;
-
     .all-center {
         width: 985px;
         display: flex;
@@ -273,19 +271,17 @@ a {
             }
         }
     }
-
+    .img-and-text {
+        padding: 80px 0 80px 0;
+    }
     .half-img-and-text {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 80px 0 80px 0;
         margin: 32px 0 32px 0;
         .half-text-container {
             width: 458px;
-            height: 153px;
             line-height: 1.5;
-            padding: 0 32px 0 0;
-
             h3 {
                 font-family: $slogan-font-family;
                 font-size: 22px;
@@ -299,16 +295,119 @@ a {
             a {
                 color: #0366d6;
                 &:hover {
-                border-bottom: 1px solid;
-                border-color: #0366d6;
-            }
+                    border-bottom: 1px solid;
+                    border-color: #0366d6;
+                }
             }
         }
-        img {
+        .conversation-img {
             width: 360px;
             height: 314.422px;
             padding: 32px;
-            margin: 0 33px 0 33px;
+            margin: 0 32px 0 32px;
         }
     }
+}
+
+.chaos-img {
+    width: 426px;
+    height: 204.469px;
+    padding: 32px;
+}
+
+.chaos-text {
+    padding: 0 0 0 32px;
+}
+
+.security {
+    .security-img {
+        margin: 0 0 8px 0;
+    }
+    p {
+        padding: 0 165px 0 164px;
+    }
+}
+
+.business-img {
+    width: 458px;
+    height: 364.391px;
+    padding: 0 0 0 32px;
+}
+
+.text-and-business {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 32px 0 32px 0;
+}
+
+.security-text-container {
+    width: 490px;
+    height: 415px;
+    h3 {
+        font-family: $slogan-font-family;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0 0 4px 0;
+    }
+    p {
+        line-height: 24px;
+        margin: 0 0 32px 0;
+    }
+}
+
+.integrations-featuretee {
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px 40px 16px;
+    margin: 0 134px 0 134px;
+    .integrations {
+        padding: 40px 0 40px 0;
+        margin: 0 163.328px 0 163.344px;
+        width: 985px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: $base-font-family;
+        h6 {
+            font-size: $base-rem;
+            font-weight: 300;
+            color: $low-key-color;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: (54 / 16) * 1rem;
+            font-weight: 300;
+            color: $nav-color;
+            font-family: $slogan-font-family;
+            line-height: 1.25;
+            margin: 16px 0 8px 0;
+        }
+        p {
+            font-size: (20 /16) * 1rem;
+            font-weight: 300;
+            line-height: 30px;
+            color: $low-key-color;
+            margin: 0 0 30px 0;
+            margin: 0 16px 24px 16px;
+        }
+    }
+    .featuretee-button {
+        button {
+            font-size: $base-rem;
+            font-weight: 600;
+            border: solid 1px #d1d5da;
+            border-radius: 6px;
+            background-color: $primary-background-color;
+            color: #0366d6;
+            padding: 12px 20px 12px 20px;
+            &:hover {
+                background-color: #0366d6;
+                border-color: #0366d6;
+                color: $primary-background-color;
+            }
+        }
+    }
+    
+
 }
