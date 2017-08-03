@@ -727,7 +727,9 @@ a {
 .stories-container {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     overflow: auto;
+    height: 184px;
     padding: 40px 0 40px 0;
     margin: 40px 0 40px 0;
     article {
@@ -735,15 +737,20 @@ a {
         a {
             display: flex;
             flex-direction: row;
-            img {
-                width: 157px;
-                height: 157px;
-            }
+        }
+        img {
+            width: 157px;
+            height: 157px;
+        }
+        .stories-text-container {
+            width: 157px;
+            height: 157px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .stories-text {
-                width: 157px;
-                height: 157px;
                 text-align: center;
-                margin: 0 auto;
                 h1 {
                     display: block;
                     color: #24292e;
@@ -760,4 +767,12 @@ a {
             }
         }
     }
+}
+
+.magee,.nova,.mapbox {
+    margin: 0 0 16px 0;
+}
+
+article:hover h1 {
+    color: #e36209;
 }
