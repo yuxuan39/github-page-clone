@@ -433,30 +433,29 @@ a {
             background-color: #553958;
             position: relative;
             &:hover {
-                box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
-            &::before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #484b4f;
-                position: relative;
-                top: 51px;
-                left: 24px;
-            }
-            &::after {
-                content: 'Slack';
-                color: white;
-                font-size: 11px;
-                border-radius: 3px;
-                background-color: #484b4f;
-                position: relative;
-                top: 65px;
-                right: 4px;
-                padding: 5px 8px;
-                
-            }
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #484b4f;
+                    position: relative;
+                    top: 51px;
+                    left: 24px;
+                }
+                &::after {
+                    content: 'Slack';
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 3px;
+                    background-color: #484b4f;
+                    position: relative;
+                    top: 65px;
+                    right: 4px;
+                    padding: 5px 8px;
+                }
             }
         }
         .zenhubio {
@@ -464,60 +463,58 @@ a {
             align-self: flex-end;
             position: relative;
             &:hover {
-                box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
-            &::before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #484b4f;
-                position: relative;
-                top: 51px;
-                left: 34px;
-            }
-            &::after {
-                content: 'ZenHubio';
-                color: white;
-                font-size: 11px;
-                border-radius: 3px;
-                background-color: #484b4f;
-                position: relative;
-                top: 65px;
-                right: 5px;
-                padding: 5px 8px;
-                
-            }
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #484b4f;
+                    position: relative;
+                    top: 51px;
+                    left: 34px;
+                }
+                &::after {
+                    content: 'ZenHubio';
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 3px;
+                    background-color: #484b4f;
+                    position: relative;
+                    top: 65px;
+                    right: 5px;
+                    padding: 5px 8px;
+                }
             }
         }
         .travis-ci {
             background-color: #eff9f9;
             position: relative;
             &:hover {
-                box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
-            &::before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #484b4f;
-                position: relative;
-                top: 51px;
-                left: 32px;
-            }
-            &::after {
-                content: 'Travis-ci';
-                color: white;
-                font-size: 11px;
-                border-radius: 3px;
-                background-color: #484b4f;
-                position: relative;
-                top: 65px;
-                right: 5px;
-                padding: 5px 8px;
-                
-            }
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #484b4f;
+                    position: relative;
+                    top: 51px;
+                    left: 32px;
+                }
+                &::after {
+                    content: 'Travis-ci';
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 3px;
+                    background-color: #484b4f;
+                    position: relative;
+                    top: 65px;
+                    right: 5px;
+                    padding: 5px 8px;
+                }
             }
         }
         .atom {
@@ -525,60 +522,58 @@ a {
             align-self: flex-end;
             position: relative;
             &:hover {
-                box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
-            &::before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #484b4f;
-                position: relative;
-                top: 51px;
-                left: 23px;
-            }
-            &::after {
-                content: 'Atom';
-                color: white;
-                font-size: 11px;
-                border-radius: 3px;
-                background-color: #484b4f;
-                position: relative;
-                top: 65px;
-                right: 5px;
-                padding: 5px 8px;
-                
-            }
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #484b4f;
+                    position: relative;
+                    top: 51px;
+                    left: 23px;
+                }
+                &::after {
+                    content: 'Atom';
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 3px;
+                    background-color: #484b4f;
+                    position: relative;
+                    top: 65px;
+                    right: 5px;
+                    padding: 5px 8px;
+                }
             }
         }
         .circleci {
             background-color: #022531;
             position: relative;
             &:hover {
-                box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
-            &::before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #484b4f;
-                position: relative;
-                top: 51px;
-                left: 28px;
-            }
-            &::after {
-                content: 'Circleci';
-                color: white;
-                font-size: 11px;
-                border-radius: 3px;
-                background-color: #484b4f;
-                position: relative;
-                top: 65px;
-                right: 5px;
-                padding: 5px 8px;
-                
-            }
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #484b4f;
+                    position: relative;
+                    top: 51px;
+                    left: 28px;
+                }
+                &::after {
+                    content: 'Circleci';
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 3px;
+                    background-color: #484b4f;
+                    position: relative;
+                    top: 65px;
+                    right: 5px;
+                    padding: 5px 8px;
+                }
             }
         }
         .codeship {
@@ -586,60 +581,58 @@ a {
             align-self: flex-end;
             position: relative;
             &:hover {
-                box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
-            &::before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #484b4f;
-                position: relative;
-                top: 51px;
-                left: 33px;
-            }
-            &::after {
-                content: 'Codeship';
-                color: white;
-                font-size: 11px;
-                border-radius: 3px;
-                background-color: #484b4f;
-                position: relative;
-                top: 65px;
-                right: 5px;
-                padding: 5px 8px;
-                
-            }
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #484b4f;
+                    position: relative;
+                    top: 51px;
+                    left: 33px;
+                }
+                &::after {
+                    content: 'Codeship';
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 3px;
+                    background-color: #484b4f;
+                    position: relative;
+                    top: 65px;
+                    right: 5px;
+                    padding: 5px 8px;
+                }
             }
         }
         .codeclimate {
             background-color: #303030;
             position: relative;
             &:hover {
-                box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
-            &::before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #484b4f;
-                position: relative;
-                top: 51px;
-                left: 40px;
-            }
-            &::after {
-                content: 'Codeclimate';
-                color: white;
-                font-size: 11px;
-                border-radius: 3px;
-                background-color: #484b4f;
-                position: relative;
-                top: 65px;
-                right: 5px;
-                padding: 5px 8px;
-                
-            }
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #484b4f;
+                    position: relative;
+                    top: 51px;
+                    left: 40px;
+                }
+                &::after {
+                    content: 'Codeclimate';
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 3px;
+                    background-color: #484b4f;
+                    position: relative;
+                    top: 65px;
+                    right: 5px;
+                    padding: 5px 8px;
+                }
             }
         }
     }
@@ -655,55 +648,56 @@ a {
         }
     }
 }
+
 .link {
-            display: flex;
-            justify-content: center;
-            align-items: center;                        
-            a {
-                color: #0366d6;
-                &:hover {
-                    border-bottom: 1px solid;
-                    border-color: #0366d6;
-                }
-            }
-            svg {
-                width: 8px;
-                height: 16px;
-                fill: #0366d6;
-                margin: 0 0 0 8px;
-            }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: #0366d6;
+        &:hover {
+            border-bottom: 1px solid;
+            border-color: #0366d6;
         }
+    }
+    svg {
+        width: 8px;
+        height: 16px;
+        fill: #0366d6;
+        margin: 0 0 0 8px;
+    }
+}
 
 .grey-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;                        
-            a {
-                color: $text-color;
-                &:hover {
-                    border-bottom: 1px solid;
-                    border-color: $text-color;
-                }
-            }
-            svg {
-                width: 8px;
-                height: 16px;
-                fill: $text-color;
-                margin: 0 0 0 8px;
-            }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: $text-color;
+        &:hover {
+            border-bottom: 1px solid;
+            border-color: $text-color;
         }
-
-
+    }
+    svg {
+        width: 8px;
+        height: 16px;
+        fill: $text-color;
+        margin: 0 0 0 8px;
+    }
+}
 
 .community-featuretee {
     display: flex;
     justify-content: center;
-    padding: 80px 16px 40px 16px;
-    margin: 0 134px 0 134px;
+    flex-direction: column;
+    padding: 80px 0 80px 0;
     .community {
         text-align: center;
+        padding: 80px 16px 40px 16px;
+        margin: 0 134px 0 134px;
         svg {
-             margin: 0 0 8px 0;
+            margin: 0 0 8px 0;
         }
         h6 {
             font-size: $base-rem;
@@ -726,6 +720,44 @@ a {
             color: $low-key-color;
             margin: 0 0 30px 0;
             margin: 0 163.328px 24px 163.324px;
+        }
+    }
+}
+
+.stories-container {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    padding: 40px 0 40px 0;
+    margin: 40px 0 40px 0;
+    article {
+        padding: 8px;
+        a {
+            display: flex;
+            flex-direction: row;
+            img {
+                width: 157px;
+                height: 157px;
+            }
+            .stories-text {
+                width: 157px;
+                height: 157px;
+                text-align: center;
+                margin: 0 auto;
+                h1 {
+                    display: block;
+                    color: #24292e;
+                    font-size: (24 / 16) * 1rem;
+                    font-weight: 300;
+                    margin: 0 0 4px 0;
+                }
+                p {
+                    display: block;
+                    color: $low-key-color;
+                    font-size: 12px;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }
