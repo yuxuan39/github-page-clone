@@ -229,10 +229,11 @@ a {
         width: 985px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         font-family: $base-font-family;
         padding: 0 16px 0 16px;
-        margin: 0 134px 0 134px;
+        margin: 0 auto;
         h6 {
             font-size: $base-rem;
             font-weight: 300;
@@ -292,11 +293,16 @@ a {
                 line-height: 24px;
                 margin: 0 0 10px 0;
             }
-            a {
-                color: #0366d6;
-                &:hover {
+            .link {
+                display: flex;
+                justify-content: flex-start;
+
+                a {
+                    color: #0366d6;
+                    &:hover {
                     border-bottom: 1px solid;
                     border-color: #0366d6;
+                    }
                 }
             }
         }
@@ -981,7 +987,7 @@ article:hover {
     .bottom-sign {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         padding: 40px 36px 0 36px;
         margin: 40px 0 0 0;
