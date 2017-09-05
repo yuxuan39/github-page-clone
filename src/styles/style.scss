@@ -25,6 +25,8 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
     background-color: $nav-color;
     color: $primary-font-color;
     align-items: center;
